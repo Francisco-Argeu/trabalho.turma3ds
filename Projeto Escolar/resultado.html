@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+      
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="Curso.html">Cursos</a>
+            <a href="notas.html">Calcular Média</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="suporte.html">Suporte</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <h2>Seu resultado</h2>
+
+        <p id="resultado"></p>
+
+    </section>
+
+    <script>
+
+        let media = localStorage.getItem("media")
+        let curso = localStorage.getItem("curso")
+
+        document.getElementById("resultado").innerHTML =
+            "Sua média foi " + media + " → Curso recomendado: " + curso
+
+    </script>
+</body>
+
+</html>
