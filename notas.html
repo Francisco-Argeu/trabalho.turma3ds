@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="Curso.html">Cursos</a>
+            <a href="notas.html">Calcular Média</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="suporte.html">Suporte</a>
+        </nav>
+    </header>
+        
+      <section class="nota-container">
+            
+            <div class="card-notas">          
+                <h2>Digite suas médias</h2>
+                <div class="inputs">      
+                    <input type="number" placeholder="Portugues" id="port">
+                    <input type="number" placeholder="Matemática" id="mat">
+                    <input type="number" placeholder="Ciencia" id="cien">
+                    <input type="number" placeholder="História" id="hist">
+                    <input type="number" placeholder="Geografia" id="geo">
+                    <input type="number" placeholder="Educaçã0 Física" id="educ">
+                </div>            
+            <button class="n" onclick="calcular()">Ver curso ideal</button>
+            <p id="erro" style="color: #ff6b6b; margin-top: 10px;"></p>
+            
+            </div>
+            
+        </section>
+        <script src="script.js"></script>
+        
+        
+</body>
+</html>
